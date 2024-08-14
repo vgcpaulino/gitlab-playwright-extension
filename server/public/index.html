@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="/public/application_dark.css" />
+    <link rel="stylesheet" href="/public/tailwind.css" />
+    <title>Chrome Extension - GitLab Playwright</title>
+  </head>
+  <body class="tab-width-8 gl-browser-chrome gl-platform-mac page-initialised">
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="container-fluid container-limited project-highlight-puc">
+          <main class="content" id="content-body">
+            <div class="merge-request">
+              <div
+                class="detail-page-header border-bottom-0 gl-block gl-pt-5 sm:!gl-flex is-merge-request"
+              >
+                <div class="detail-page-header-body">
+                  <h1
+                    class="title gl-heading-1 gl-my-0 gl-block gl-grow gl-break-anywhere !gl-m-0"
+                    data-testid="title-content"
+                  >
+                    chore(tests-e2e): Chrome Extension GitLab Playwright
+                  </h1>
+                </div>
+                <div
+                  class="detail-page-header-actions gl-self-start is-merge-request js-issuable-actions gl-flex gl-mt-1"
+                >
+                  <a
+                    class="gl-button btn btn-md btn-default gl-hidden sm:gl-block gl-align-self-start has-tooltip js-issuable-edit"
+                    data-testid="edit-title-button"
+                    ><span class="gl-button-text"> Edit </span>
+                  </a>
+                  <div
+                    class="gl-flex gl-flex-col sm:gl-flex-row gl-gap-3 gl-w-full sm:gl-w-auto gl-mt-2 sm:gl-mt-0"
+                  >
+                    <div class="gl-sm-ml-3 dropdown gl-dropdown">
+                      <button
+                        class="gl-button btn btn-md btn-confirm gl-display-flex gl-align-self-start gl-w-full gl-s-w-auto"
+                        data-testid="mr-code-dropdown"
+                        type="button"
+                      >
+                        <span
+                          class="gl-button-text gl-inline-flex gl-justify-content-space-between gl-w-full"
+                        >
+                          Code
+                          <svg
+                            class="s16 gl-icon gl-mr-0!"
+                            data-testid="chevron-down-icon"
+                          >
+                            <use
+                              href="/public/assets/icons.svg#chevron-down"
+                            ></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <div class="gl-dropdown-inner">
+                          <div class="gl-dropdown-contents">
+                            <ul>
+                              <li class="gl-dropdown-section-header">
+                                <header class="dropdown-header">
+                                  Review changes
+                                </header>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

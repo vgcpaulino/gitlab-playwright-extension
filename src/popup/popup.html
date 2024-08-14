@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body class="popup-body">
+    <h1>Settings</h1>
+    
+    <h2>Add Project</h2>
+    <form id="projectForm" class="project-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="input-field" required>
+      </div>
+      <div class="form-group">
+        <label for="projectId">ID:</label>
+        <input type="number" id="projectId" name="projectId" class="input-field" required>
+      </div>
+      <div class="form-group">
+        <label for="jobName">Pipeline Job Name:</label>
+        <input type="text" id="jobName" name="jobName" class="input-field" required>
+      </div>
+      <div class="form-group">
+        <label for="artifactUrl">Artifact URL:</label>
+        <input type="text" id="artifactUrl" name="artifactUrl" class="input-field" required>
+        <small class="hint">
+          Hint: The URL must include 
+          <code>${jobId}</code>, 
+          Example: 
+          <br><code>https://gitlab.com/myproject/${jobId}/artifacts/html/index.html</code>
+        </small>
+      </div>
+      <button type="submit" class="submit-button">Add</button>
+    </form>
+
+    <h2>List of Projects</h2>
+    <div id="projectList" class="project-list"></div>
+
+    <footer class="footer">
+      <label class="toggle-container">
+        Enable Logs
+        <input type="checkbox" id="logToggle">
+        <span class="toggle-switch"></span>
+      </label>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
